@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adi Lukman — Full-Stack Web Developer</title>
+<meta name="description" content="Portfolio of Raka Pratama, a full-stack web developer specializing in React, Node.js, and building fast, accessible web applications.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230D0F12'/%3E%3Ctext x='50' y='69' font-size='56' font-family='Georgia,serif' fill='%23C9A227' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!--
+  FILE STRUCTURE
+  index.html  — content & structure (this file)
+  style.css   — all design/colors/spacing/animations
+  script.js   — nav toggle, scroll reveal, active-link highlight
+
+  QUICK EDIT GUIDE — search this file for these markers to personalize:
+  1. [EDIT: NAME]        — your name, appears in nav + hero
+  2. [EDIT: ABOUT]       — bio, quick facts
+  3. [EDIT: SKILLS]      — tech stack lists
+  4. [EDIT: PROJECTS]    — project cards (title, description, links, stack)
+  5. [EDIT: EXPERIENCE]  — work history timeline
+  6. [EDIT: CONTACT]     — email + social links
+
+  To change colors/fonts sitewide, edit the :root variables
+  at the top of style.css instead of editing this file.
+-->
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">AL<span>.</span></a> <!-- [EDIT: NAME] initial -->
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#work">work</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-outline nav-cta">Let's talk</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg class="icon" id="menuIcon" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <p class="eyebrow reveal">FULL-STACK WEB DEVELOPER</p>
+      <h1 class="hero-name reveal reveal-delay-1">Adi Lukman</h1> <!-- [EDIT: NAME] -->
+      <p class="hero-tagline reveal reveal-delay-2">I build fast, accessible interfaces — and the systems that quietly power them.</p>
+      <div class="hero-meta reveal reveal-delay-2">
+        <span><span class="status-dot"></span>Available for select projects</span>
+        <span>Purwokerto, ID — GMT+7</span>
+      </div>
+      <div class="hero-ctas reveal reveal-delay-3">
+        <a href="#work" class="btn btn-primary">View Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="scroll-cue"><div class="scroll-cue-line"></div>SCROLL</div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container about-grid">
+      <div>
+        <p class="eyebrow reveal">about</p>
+        <h2 class="section-heading reveal">A little about my process</h2>
+        <p class="about-quote reveal reveal-delay-1">"I care about the details most people never notice — the 40ms that make an interaction feel instant, the empty state that still feels considered, the code a teammate can actually read six months from now."</p>
+        <!-- [EDIT: ABOUT] bio paragraphs below -->
+        <p class="about-body reveal reveal-delay-2">I'm a full-stack developer with 5+ years of experience turning product ideas into clean, reliable software — from the first wireframe to the last deploy. I like projects where design and engineering have to negotiate with each other.</p>
+        <p class="about-body reveal reveal-delay-2">Outside of client work, I spend time contributing to small open-source tools and mentoring junior developers through local Jakarta tech communities.</p>
+      </div>
+
+      <div class="facts-card reveal reveal-delay-1">
+        <!-- [EDIT: ABOUT] quick facts -->
+        <div class="fact">
+          <span class="fact-label">Location</span>
+          <span class="fact-value">Purwokerto, Indonesia</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Focus</span>
+          <span class="fact-value">Frontend Architecture, Design Systems</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Experience</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Currently</span>
+          <span class="fact-value">Building at Nexora Digital</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Email</span>
+          <span class="fact-value"><a href="adilukman665@gmail.com">adilukman665@gmail.com</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="container">
+      <p class="eyebrow reveal">skills</p>
+      <h2 class="section-heading reveal" style="margin-bottom: 3.5rem;">Tools I reach for</h2>
+
+      <!-- [EDIT: SKILLS] -->
+      <div class="skills-grid">
+        <div class="skill-panel reveal">
+          <p class="skill-panel-title">Frontend</p>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">HTML5 / CSS3</span>
+          </div>
+        </div>
+        <div class="skill-panel reveal reveal-delay-1">
+          <p class="skill-panel-title">Backend</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-panel reveal reveal-delay-2">
+          <p class="skill-panel-title">Tools &amp; Practice</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Agile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="work">
+    <div class="container">
+      <p class="eyebrow reveal">work</p>
+      <h2 class="section-heading reveal" style="margin-bottom: 1rem;">Selected projects</h2>
+
+      <!-- [EDIT: PROJECTS] each .project-row is one project -->
+
+      <div class="project-row reveal">
+        <div class="project-meta">2024<strong>Full-Stack Development</strong></div>
+        <div>
+          <h3 class="project-title">Warung Digital — E-Commerce for Local Merchants</h3>
+          <p class="project-desc">An e-commerce platform helping small warung owners in Jakarta sell online — WhatsApp checkout, offline-first inventory sync, and a merchant dashboard designed for first-time smartphone sellers.</p>
+          <div class="project-stack">
+            <span>Next.js</span><span>Tailwind CSS</span><span>Supabase</span><span>Midtrans API</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><svg class="icon" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>Live Site</a>
+            <a href="#"><svg class="icon" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>Source Code</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="container">
+      <p class="eyebrow reveal">experience</p>
+      <h2 class="section-heading reveal" style="margin-bottom: 3.5rem;">Where I've worked</h2>
+
+      <!-- [EDIT: EXPERIENCE] -->
+        <div class="timeline-item reveal">
+          <span class="timeline-range">2019 — 2021</span>
+          <h3 class="timeline-role">Junior Developer</h3>
+          <span class="timeline-company">Kodefolk</span>
+          <p class="timeline-desc">Started as an intern, promoted within a year. Worked on internal design-system components and contributed to the company's first mobile-responsive redesign.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="container contact-inner">
+      <p class="eyebrow reveal" style="justify-content:center; align-items:center;">contact</p>
+      <h2 class="contact-heading reveal">Let's build something worth shipping.</h2>
+      <!-- [EDIT: CONTACT] -->
+      <p class="contact-sub reveal">I'm currently open to new opportunities, freelance projects, and interesting collaborations. If you have something in mind, my inbox is open.</p>
+      <a href="adilukman665@gmail.com" class="contact-email reveal">adilukman665@gmail.com</a>
+      <div class="social-row reveal">
+        <a href="#" class="social-pill">GitHub ↗</a>
+        <a href="#" class="social-pill">LinkedIn ↗</a>
+        <a href="#" class="social-pill">Instagram ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="container">
+  <span> Copy Right© <span id="year"></span> Adilukman. Crafted with care in Purwokerto.</span>
+  <a href="#home">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
